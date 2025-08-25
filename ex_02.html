@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: {
+          firstName: "siwoo",
+          lastName: "choi",
+        },
+        likes: ["apple", "samsung"],
+        printHello: function () {
+          return "hello";
+        },
+        age: 20,
+      };
+
+      // 이름 출력 (name)
+      console.log(person["name"]); // 객체를 활용해 출력
+      console.log(person["name"]["firstName"]); // 객체를 활용해 출력
+      console.log(person.name.firstName); // 우리가 해오던 방법(.으로)
+
+      // 좋아하는 것 출력(likes)
+      console.log(person["likes"][0]); // 객체를 활용해 출력
+      console.log(person["likes"][1]); // 객체를 활용해 출력
+      console.log(person.likes[0]); // 우리가 해오던 방법([]으로)
+
+      // printHello 출력
+      console.log(person["printHello"]()); // 객체를 활용해 출력
+      console.log(person.printHello()); // 우리가 해오던 방법
+
+      // 나이 출력(age)
+      console.log(person["age"]); // 객체를 활용해 출력
+      console.log(person.age); // 우리가 해오던 방법
+
+      // 객체 속성 값 변경하기( 원래는 20 -> 30으로 변경)
+      person.age = 30;
+      console.log(person["age"]); // 객체를 활용해 출력
+
+
+      // 객체 속성 동적으로 추가하기
+      const userName = {};
+      console.log(userName);  // 실행 결과 : {} 빈 객체가 나온다.
+      userName.name = "choi siwoo";
+      console.log(userName);  
+      
+
+      // 객체 속성 동적으로 삭제하기
+      delete person.name
+      console.log(person);  // 실행 결과 : {} 출력
+      
+    </script>
+  </body>
+</html>

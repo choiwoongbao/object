@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: ["홍길동", "김혜주"],
+        age: 23,
+        city: {
+          dong: "동구",
+        },
+        printInfo: function () {
+          console.log("printInfo");
+        },
+      };
+
+      // 따옴표를 사용해 결과 출력하는 방법
+      const prersons = {
+        name: "최시우",
+        age: 24,
+      };
+      console.log(prersons["name"]);
+      console.log(prersons.name);  // 원래는 이 방법으로 해왔음.
+    </script>
+  </body>
+</html>

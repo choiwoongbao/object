@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>객체의 데이터 관리 방법</title>
+  </head>
+  <body>
+    <script>
+        // 기본 자료형의 데이터 : 깊은 복사
+      let num = 10;
+      console.log(num);
+      let copynum = num;
+      console.log(copynum, num);
+      num = 30;
+      console.log(num);
+      console.log(copynum); 
+      // 실행 결과 : num : 10 , copynum : 30
+      // 복사한 값을 재할당할 때 한쪽 데이터가 변경되어도 서로 영향을 미치지 않는다.
+    </script>
+  </body>
+</html>
